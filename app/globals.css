@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-waffy-blue: #A0E7E5;
+  --color-waffy-yellow: #FBE7C6;
+  --color-waffy-green: #B4F8C8;
+  --color-waffy-pink: #FFAEBC;
+  --color-waffy-cream: #FFFBF0;
+  --color-waffy-text: #4A4A4A;
+}
+
+body {
+  background-color: var(--color-waffy-cream);
+  color: var(--color-waffy-text);
+  font-family: var(--font-nunito), sans-serif;
+}
