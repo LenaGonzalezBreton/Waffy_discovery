@@ -48,6 +48,10 @@ export default function StageModule({
                     {description}
                 </p>
 
+                <h4 className="text-sm font-bold text-gray-500 uppercase tracking-wide mb-4">
+                    Modules qui pourraient vous intéresser
+                </h4>
+
                 <div className="space-y-3">
                     {features.map((feature, index) => (
                         <div key={index} className="flex items-center gap-3">
@@ -67,10 +71,18 @@ export default function StageModule({
 
                 <div className="mt-8">
                     <button
-                        className="w-full py-3 rounded-xl font-bold text-white shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+                        onClick={() => {
+                            // Scroll to the newsletter section
+                            const newsletterSection = document.getElementById('newsletter');
+                            if (newsletterSection) {
+                                newsletterSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            onClose();
+                        }}
+                        className="w-full py-3 rounded-xl font-bold text-white shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
                         style={{ backgroundColor: color }}
                     >
-                        Découvrir
+                        Je m'inscris à la bêta
                     </button>
                 </div>
             </div>

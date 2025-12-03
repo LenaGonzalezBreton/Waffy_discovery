@@ -9,8 +9,13 @@ const stages = [
     {
         id: "puppy",
         title: "Étape 1 — Chiot",
-        description: "Tout commence ici. Les premiers pas, les premières découvertes.",
-        features: ["Dossier santé", "Identification (puce, ICAD)", "Poids & taille", "Premiers vaccins"],
+        description: "Les premiers mois sont cruciaux. Waffy vous aide à ne rien oublier et à bien démarrer.",
+        features: [
+            "📋 Dossier santé complet : centralisez toutes les infos médicales",
+            "🏷️ Identification : puce, ICAD, tout au même endroit",
+            "📊 Suivi poids & taille : courbes de croissance personnalisées",
+            "💉 Calendrier vaccinal : rappels automatiques pour ne rien manquer"
+        ],
         color: "#A0E7E5",
         progressTrigger: 0.15,
         side: "right" as const,
@@ -18,8 +23,13 @@ const stages = [
     {
         id: "young",
         title: "Étape 2 — Jeune chien",
-        description: "Apprendre, comprendre, grandir. L'énergie débordante !",
-        features: ["Éducation", "Socialisation", "Système d’amis", "Communauté"],
+        description: "L'éducation et la socialisation sont essentielles. Waffy vous accompagne dans cette aventure.",
+        features: [
+            "🎓 Modules d'éducation : guides et exercices adaptés",
+            "🐕 Socialisation : conseils pour bien intégrer votre chien",
+            "👥 Communauté : échangez avec d'autres propriétaires",
+            "📅 Suivi des progrès : gardez trace de son évolution"
+        ],
         color: "#FBE7C6",
         progressTrigger: 0.40,
         side: "left" as const,
@@ -27,8 +37,13 @@ const stages = [
     {
         id: "adult",
         title: "Étape 3 — Adulte",
-        description: "Vivre longtemps, vivre heureux. La force de l'âge.",
-        features: ["Scan d’ordonnances", "Rappels médicaments", "Export vétérinaire", "Pathologies"],
+        description: "La santé au quotidien simplifiée. Waffy digitalise et organise tout pour vous.",
+        features: [
+            "📸 Scan d'ordonnances : numérisez et archivez en un clic",
+            "⏰ Rappels médicaments : ne ratez plus aucune prise",
+            "🏥 Export vétérinaire : partagez le dossier facilement",
+            "🩺 Suivi pathologies : historique complet et détaillé"
+        ],
         color: "#B4F8C8",
         progressTrigger: 0.65,
         side: "left" as const,
@@ -36,8 +51,13 @@ const stages = [
     {
         id: "senior",
         title: "Étape 4 — Senior",
-        description: "Accompagner jusqu’au bout avec douceur et amour.",
-        features: ["Suivi santé avancé", "Pathologies chroniques", "Routines bien-être"],
+        description: "Les années dorées méritent une attention particulière. Waffy veille sur son bien-être.",
+        features: [
+            "❤️ Suivi santé renforcé : monitoring adapté aux seniors",
+            "📝 Pathologies chroniques : gestion simplifiée au quotidien",
+            "🌟 Routines bien-être : conseils pour son confort",
+            "📊 Tableaux de bord : visualisez son état de santé en un coup d'œil"
+        ],
         color: "#FFAEBC",
         progressTrigger: 0.90,
         side: "right" as const,

@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
+    const scrollToGameBoard = () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <section className="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-waffy-cream">
             {/* Background Elements */}
@@ -19,8 +26,8 @@ export default function Hero() {
                 className="z-10 max-w-4xl px-6"
             >
                 <h1 className="text-5xl md:text-7xl font-bold text-waffy-text mb-6 tracking-tight">
-                    L’Aventure d’un Chien, <br />
-                    <span className="text-waffy-blue">L’Avenir de Votre Compagnon</span>
+                    L'Aventure d'un Chien, <br />
+                    <span className="text-waffy-blue">L'Avenir de Votre Compagnon</span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -30,9 +37,10 @@ export default function Hero() {
                 <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-waffy-blue text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all"
+                    onClick={scrollToGameBoard}
+                    className="bg-waffy-blue text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all cursor-pointer"
                 >
-                    Commencer l’aventure
+                    Commencer l'aventure
                 </motion.button>
             </motion.div>
 
@@ -40,7 +48,8 @@ export default function Hero() {
             <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                className="absolute bottom-10 z-10"
+                className="absolute bottom-10 z-10 cursor-pointer"
+                onClick={scrollToGameBoard}
             >
                 <ArrowDown className="w-8 h-8 text-waffy-text/50" />
             </motion.div>
